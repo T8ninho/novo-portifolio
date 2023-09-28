@@ -1,0 +1,26 @@
+.container {
+	display: flex;
+	justify-content: space-around;
+	flex-direction: row;
+	padding: 30px;
+}
+
+h1 {
+	color: #000;
+}
+
+p {
+	text-align: justify;
+}
+span {
+	color: #ff7e00;
+	font-weight: bold;
+}
+
+.container img {
+	border: 5px solid #000000;
+	border-radius: 150px;
+	width: 150px;
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+	margin: 30px;
+}

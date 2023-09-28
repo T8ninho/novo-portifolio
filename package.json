@@ -9,8 +9,11 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "next": "latest",
     "react": "latest",
-    "react-dom": "latest",
-    "next": "latest"
+    "react-dom": "latest"
+  },
+  "devDependencies": {
+    "image-webpack-loader": "^8.1.0"
   }
 }
