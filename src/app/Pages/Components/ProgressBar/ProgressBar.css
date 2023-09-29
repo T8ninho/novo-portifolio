@@ -1,14 +1,12 @@
 /* Estilos para o contêiner da barra de progresso */
 .progress-container {
 	width: 100%;
-	background-color: #ff7e00;
 	height: 20px; /* Altura da barra de progresso */
 	border-radius: 10px;
 	border-color: #000;
 	border-width: 1px;
 	border-style: solid;
 	padding: 2px;
-	margin-bottom: 20px;
   }
   
   /* Estilos para a barra de progresso */

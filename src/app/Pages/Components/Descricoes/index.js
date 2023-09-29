@@ -1,41 +1,46 @@
 import ProgressBar from '../ProgressBar'
 import './index.styles.css'
+import dynamic from 'next/dynamic';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCheckCircle, faTimesCircle } from '@fortawesome/free-solid-svg-icons';
+import { faPhoneVolume, faEnvelope, faLocationDot, faUserGraduate, faSquare } from '@fortawesome/free-solid-svg-icons'
 
 export default function Descricao() { 
+	function Item({children, icone}) {
+		return(
+			<div className='itemDescricao'>
+				<FontAwesomeIcon icon={icone} className='itemIcone' />
+				{children}
+			</div>
+		)
+	} 
 
 	return(
 		<div className='containerDescricao'>
-			<FontAwesomeIcon icon={faCheckCircle} />
-			<div className='SubContainer'>
-				<ul>
-					<h1>Contato:</h1>
-					<li>+55 27 99602-8557 (WhatsApp)</li>
+			<div>
+				<h1>Contato:</h1>
+					<Item icone={faPhoneVolume}>+55 27 99602-8557 (WhatsApp)</Item>
 					<br />
-					<li>tonisantos.contato@gmail.com</li>
+					<Item icone={faEnvelope}>tonisantos.contato@gmail.com</Item>
 					<br />
-					<li>Cariacica - Espírito Santo - Brasil</li>
-				</ul>
+					<Item icone={faLocationDot}>Cariacica - Espírito Santo - Brasil</Item>
 					<br />
-				<ul>
-					<h1>Skills:</h1>
-					<li><ProgressBar  value={30} /></li>
-					<li><ProgressBar  value={30} /></li>
-					<li><ProgressBar  value={30} /></li>
-				</ul>
+				
+				<h1>Skills:</h1>
+					<Item><ProgressBar value={40} /></Item>
+					<br />
+					<Item><ProgressBar value={30} /></Item>
+					<br />
+					<Item><ProgressBar value={80} /></Item>
 			</div>
-			<div className='SubContainer'>
-				<ul>
-					<h1>Fromação Acadêmica:</h1>
-						<li style={{listStyle: 'none'}}>Ensino médio(2º Grau),</li>
-						<li>EEEFM Néa Salles Nunes Pereira em Espírito Santo</li>
-						<li style={{listStyle: 'none'}}>01/2015 - 12/2017</li>
+			<div>
+				<h1>Fromação Acadêmica:</h1>
+					<Item>Ensino médio(2º Grau),</Item>
+					<Item>EEEFM Néa Salles Nunes Pereira em Espírito Santo</Item>
+					<Item>01/2015 - 12/2017</Item>
 					<br />
-						<li style={{listStyle: 'none'}}>Desenvolvimento Full Stack (Superior Tecnólogo)</li>
-						<li>Estácio de Sá (1º Período)</li>
-						<li style={{listStyle: 'none'}}>Previsão de conclusão: 2025</li>
-				</ul>
+					<Item icone={faSquare}>Desenvolvimento Full Stack (Superior Tecnólogo)</Item>
+					<Item icone={faUserGraduate}>Estácio de Sá (1º Período)</Item>
+					<Item>Previsão de conclusão: 2025</Item>
 			</div>
 		</div>
 	)

@@ -2,15 +2,21 @@
 	padding: 30px;
 	min-width: 100%;
 	display: flex;
-	flex-direction: row;
 	background-color: #ff7e00;
 	color: #fff;
 	justify-content: space-around;
 }
 
-.SubContainer {
+.itemDescricao {
 	display: flex;
-	flex-direction: column;
+	align-items: center;
+	font-size: 14px;
+}
+
+.itemIcone {
+	color: black;
+	width: 30px;
+	margin-right: 15px;
 }
 
 

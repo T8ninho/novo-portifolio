@@ -1,5 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+    function (api) {
+        return {
+            plugins: ['macros'],
+        }
+    },
     // Configuração do ícone
     async headers() {
         return [
@@ -16,6 +21,7 @@ const nextConfig = {
     },
     //configuração reduzir o tamanho em disco de uma imagem
 	module: {
+        
         rules: [
             {
                 test: /\.(png|jpg|jpeg|gif|svg)$/i,
