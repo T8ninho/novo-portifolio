@@ -4,7 +4,9 @@ import './index.styles.css'
 export default function SobreMim() {
 	return(
 		<div className="containerSobreMim">
-			<img src={Perfil.src} alt='Foto que retrata o rosto do autor do site.'/>
+			<div className='containerImg'>
+				<img src={Perfil.src} alt='Foto que retrata o rosto do autor do site.'/>
+			</div>
 			<div className='containerSobreMimTexto'>
 				<div>
 					<h1>Olá, me chamo <span>Antonio Vitor</span>...</h1>

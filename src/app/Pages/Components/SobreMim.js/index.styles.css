@@ -4,7 +4,7 @@
 	max-height: 50vh;
 	display: flex;
 	flex-direction: row;
-	background-color: aqua;
+	justify-content: space-between;
 }
 
 .containerSobreMimTexto h1 {
@@ -18,18 +18,25 @@
 	color: #ff7e00;
 	font-weight: bold;
 }
+.containerImg {
+	display: flex;
+	flex: 1;
+}
 
 .containerSobreMim img {
 	border: 5px solid #000000;
 	border-radius: 150px;
-	width: 180px;
+	resize: horizontal;
 	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 	margin-right: 30px;
 	max-width: 100%;
-	height: auto;
+	max-height: 100%;
+	object-fit: cover;
 }
 .containerSobreMimTexto {
 	margin-left: 30px;
 	display: flex;
 	align-items: center;
+	flex: 4;
+
 }
