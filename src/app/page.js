@@ -1,4 +1,6 @@
-import Geral from './Pages/Geral'
+"use client"
+
+import App from "./Pages"
 
 export default function Home() {
   return (
@@ -8,7 +10,7 @@ export default function Home() {
         alignItems: 'center',
         justifyContent: 'center'
       }}>
-      <Geral />
+        <App />
     </div>
   )
 }
