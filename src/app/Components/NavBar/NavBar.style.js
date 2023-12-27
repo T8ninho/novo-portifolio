@@ -30,4 +30,9 @@ export const HeaderMenuItem = styled.a`
 	font-size: 18px;
 	transition: .3s;
 	text-transform: uppercase;
+	
+	&:hover {
+    	color: red;
+  	}
+
 `

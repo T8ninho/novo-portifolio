@@ -1,3 +1,4 @@
+import Botao from "../Botao/Botao";
 import { ContainerConteudo, SubConteudo, ConteudoPreTitulo, ConteudoTitulo } from "./Conteudo.style";
 
 export default function Conteudo() {
@@ -9,6 +10,7 @@ export default function Conteudo() {
 					<ConteudoTitulo>Dev.</ConteudoTitulo>
 					<ConteudoTitulo>FRONT-END</ConteudoTitulo>
 				</div>
+				<Botao>Projetos Anteriores</Botao>
 			</SubConteudo>
 		</ContainerConteudo>
 	)
